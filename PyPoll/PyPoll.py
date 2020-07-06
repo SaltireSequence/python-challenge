@@ -15,8 +15,10 @@ TotalVotes = 0
 # dict to hold percentage values for each candidate, dependant on percentage of votes received.
 PercentageOfVotes = {}
 
+
 WinnerCounter = 0
 
+# Variable to hold winner
 Winner = ""
 
 # using os function to navigate to path and .csv file
