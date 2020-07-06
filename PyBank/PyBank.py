@@ -11,12 +11,17 @@ AverageMonthlyRevenueChange = []
 # path for budget data file
 BudgetDataFile = os.path.join('Resources', 'budget_data.csv')
 
+# defining parameters of budget data csv file.
 with open(BudgetDataFile, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
 
+    # setting month counter to zero.
     monthcounter = 0
+
+    # for loop to iterate rows of the budget_data csv file.
     for row in csvreader:
+        # appending
         BudgetDates.append(row[0])
         ProfitLoss.append(row[1])
         monthcounter += 1
@@ -75,6 +80,7 @@ sys.stdout = open('budget_analysis.txt', 'wt')
 print("Financial Analysis\n----------------------------")
 print("Total Months:", str(TotalMonths))
 print("Total:","$" + str(TotalProfitLoss))
+
 # I had an issue where my string would be to 10-decimal places. Couldn't work out why, so just force-rounded it
 # using the round() function
 print("Average Change:", "$" + str(round(AverageMonthlyChange, 2)))
