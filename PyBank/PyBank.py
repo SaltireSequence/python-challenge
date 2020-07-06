@@ -8,6 +8,7 @@ BudgetDates = []
 ProfitLoss = []
 AverageMonthlyRevenueChange = []
 
+# path for budget data file
 BudgetDataFile = os.path.join('Resources', 'budget_data.csv')
 
 with open(BudgetDataFile, newline="") as csvfile:
