@@ -12,6 +12,7 @@ Candidates = {}
 # Total Votes Counter
 TotalVotes = 0
 
+# dict to hold percentage values for each candidate, dependant on percentage of votes received.
 PercentageOfVotes = {}
 
 WinnerCounter = 0
@@ -82,5 +83,3 @@ for key, value in Candidates.items():
 OutputFile.write("----------------------------\n")
 # writing a string of the Winnger / Candidate value to text file
 OutputFile.write("Winner: " + str(Winner))
-
-
