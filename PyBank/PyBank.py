@@ -3,6 +3,7 @@ import csv
 import os
 import sys
 
+# Empty lists to store budget dates and profit loss information
 BudgetDates = []
 ProfitLoss = []
 AverageMonthlyRevenueChange = []
