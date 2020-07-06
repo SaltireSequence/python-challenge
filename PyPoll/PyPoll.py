@@ -49,6 +49,7 @@ with open(ElectionDataFile, newline="") as csvfile:
     # those values in the PercentageOfVotes dictionary.
     for key, value in Candidates.items():
         PercentageOfVotes[key] = round((value/TotalVotes)*100, 2)
+        
     # for loop that iterates through the keys in my Candidates dictionary and identifies the winner / candidate with
     # the most votes.
     for key in Candidates.keys():
@@ -67,7 +68,7 @@ print("----------------------------")
 # dictionary and prints the key, percentage
 for key, value in Candidates.items():
     print(key + ": " + str(PercentageOfVotes[key]) + "% " + "(" + str(value) + ")")
-    
+
 # printing data separator
 print("----------------------------")
 # printing a string of the Winnger / Candidate value
