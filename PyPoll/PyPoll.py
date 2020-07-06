@@ -49,14 +49,13 @@ with open(ElectionDataFile, newline="") as csvfile:
     # those values in the PercentageOfVotes dictionary.
     for key, value in Candidates.items():
         PercentageOfVotes[key] = round((value/TotalVotes)*100, 2)
-        
+
     # for loop that iterates through the keys in my Candidates dictionary and identifies the winner / candidate with
     # the most votes.
     for key in Candidates.keys():
         if Candidates[key] > WinnerCounter:
             Winner = key
             WinnerCounter = Candidates[key]
-
 
 # using length function to find the total votes, using column 0 values, which we saved in VoteID variable.
 print("")
