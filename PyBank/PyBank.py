@@ -33,6 +33,7 @@ TotalMonths = len(BudgetDates)
 # The net total amount of "Profit/Losses" over the entire period
 TotalProfitLoss = 0
 x = 0
+
 for x in range(TotalMonths):
     TotalProfitLoss = TotalProfitLoss + int(ProfitLoss[x])
 
