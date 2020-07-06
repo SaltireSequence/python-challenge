@@ -62,10 +62,12 @@ print("")
 print("Election Results\n----------------------------")
 print("Total Votes: " + (str(TotalVotes)))
 print("----------------------------")
+
 # I'm sure there is a more eloquent way to do this but, this for loop iterates through each key in my Candidates
 # dictionary and prints the key, percentage
 for key, value in Candidates.items():
     print(key + ": " + str(PercentageOfVotes[key]) + "% " + "(" + str(value) + ")")
+    
 # printing data separator
 print("----------------------------")
 # printing a string of the Winnger / Candidate value
