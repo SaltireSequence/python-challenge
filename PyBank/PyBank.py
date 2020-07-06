@@ -70,6 +70,7 @@ GreatestDecDate = BudgetDates[LowestIndex]
 print("Financial Analysis\n----------------------------")
 print("Total Months:", str(TotalMonths))
 print("Total:","$" + str(TotalProfitLoss))
+
 # I had an issue where my string would be to 10-decimal places. Couldn't work out why, so just force-rounded it
 # using the round() function
 print("Average Change:", "$" + str(round(AverageMonthlyChange, 2)))
