@@ -21,7 +21,7 @@ WinnerCounter = 0
 # Variable to hold winner
 Winner = ""
 
-# using os function to navigate to path and .csv file
+# Using os function to navigate to path and .csv file
 ElectionDataFile = os.path.join('Resources', 'election_data.csv')
 
 # with statement to set .csv parameters (delimiter etc and open using csvreader.)
