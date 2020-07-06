@@ -32,7 +32,7 @@ Both of these challenges encompasses a real-world situation where your newfound 
 
 * Your task is to create a Python script that analyzes the records to calculate each of the following:
 
-  * The total number of months included in the dataset
+  * The total number of months included in the dataset 
 
   * The net total amount of "Profit/Losses" over the entire period
 
