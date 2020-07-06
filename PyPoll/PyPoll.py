@@ -79,9 +79,11 @@ OutputFile.write("----------------------------\n")
 OutputFile.write("Total Votes: " + (str(TotalVotes)) + '\n')
 # writing data separator
 OutputFile.write("----------------------------\n")
+
 # Same for loop as with printing, however writing to file.
 for key, value in Candidates.items():
     OutputFile.write(key + ": " + str(PercentageOfVotes[key]) + "% " + "(" + str(value) + ")\n")
 OutputFile.write("----------------------------\n")
+
 # writing a string of the Winnger / Candidate value to text file
 OutputFile.write("Winner: " + str(Winner))
