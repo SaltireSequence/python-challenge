@@ -21,7 +21,7 @@ with open(BudgetDataFile, newline="") as csvfile:
 
     # for loop to iterate rows of the budget_data csv file.
     for row in csvreader:
-        # appending
+        # appending to BudgetDates list
         BudgetDates.append(row[0])
         ProfitLoss.append(row[1])
         monthcounter += 1
