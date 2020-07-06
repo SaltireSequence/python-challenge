@@ -23,6 +23,7 @@ with open(BudgetDataFile, newline="") as csvfile:
     for row in csvreader:
         # appending to BudgetDates list
         BudgetDates.append(row[0])
+        # appending to ProfitLoss list
         ProfitLoss.append(row[1])
         monthcounter += 1
 
